@@ -1,6 +1,8 @@
-import random
+from random import shuffle
 
-duplas = random.sample(range(1, 7), 6)
-print("Dupla 1: ", duplas[0], "e" ,duplas[1])
-print("Dupla 2: ", duplas[2], "e" ,duplas[3])
-print("Dupla 3: ", duplas[4], "e" ,duplas[5])
+alunos = range(1,7)
+shuffle(alunos)
+
+print "Dupla 1: %i e %i" %(alunos[0], alunos[1])
+print "Dupla 2: %i e %i" %(alunos[2], alunos[3])
+print "Dupla 3: %i e %i" %(alunos[4], alunos[5])
